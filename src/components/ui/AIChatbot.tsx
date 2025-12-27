@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { MessageCircle, X, Send, Sparkles } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { GlassCard } from './GlassCard';
+import GlassCard from './GlassCard';
 
 interface Message {
     id: string;
@@ -138,8 +138,8 @@ export const AIChatbot = () => {
                                     >
                                         <div
                                             className={`max-w-[85%] rounded-2xl px-4 py-2.5 ${msg.sender === 'user'
-                                                    ? 'bg-gradient-to-r from-primary-500 to-violet-500 text-white'
-                                                    : 'bg-slate-800/80 text-white border border-slate-700/50'
+                                                ? 'bg-gradient-to-r from-primary-500 to-violet-500 text-white'
+                                                : 'bg-slate-800/80 text-white border border-slate-700/50'
                                                 }`}
                                         >
                                             <p className="text-sm leading-relaxed">{msg.text}</p>
@@ -216,8 +216,8 @@ export const AIChatbot = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 className={`fixed bottom-6 right-6 z-40 p-4 rounded-full shadow-2xl transition-all ${isOpen
-                        ? 'bg-slate-800 text-white'
-                        : 'bg-gradient-to-r from-primary-500 to-violet-500 text-white'
+                    ? 'bg-slate-800 text-white'
+                    : 'bg-gradient-to-r from-primary-500 to-violet-500 text-white'
                     }`}
             >
                 {isOpen ? <X size={28} /> : <MessageCircle size={28} />}
