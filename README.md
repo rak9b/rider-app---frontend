@@ -13,7 +13,49 @@ Explore the premium public-facing pages:
 ## 🔐 Authentication
 - **Login**: [https://rider-app-frontend-one.vercel.app/login](https://rider-app-frontend-one.vercel.app/login)
 - **Register**: [https://rider-app-frontend-one.vercel.app/register](https://rider-app-frontend-one.vercel.app/register)
-
+📋 Frontend URLs (http://localhost:5173)
+Public Pages:
+http://localhost:5173/ (Home)
+http://localhost:5173/about
+http://localhost:5173/features
+http://localhost:5173/contact
+http://localhost:5173/faq
+Authentication:
+http://localhost:5173/login
+http://localhost:5173/register
+Rider Dashboard:
+http://localhost:5173/dashboard/rider
+http://localhost:5173/dashboard/rider/history
+http://localhost:5173/dashboard/rider/profile
+Driver Dashboard:
+http://localhost:5173/dashboard/driver
+http://localhost:5173/dashboard/driver/requests
+http://localhost:5173/dashboard/driver/earnings
+http://localhost:5173/dashboard/driver/documents
+http://localhost:5173/dashboard/driver/history
+http://localhost:5173/dashboard/driver/reviews
+http://localhost:5173/dashboard/driver/profile
+Admin Dashboard:
+http://localhost:5173/dashboard/admin
+http://localhost:5173/dashboard/admin/users
+http://localhost:5173/dashboard/admin/rides
+http://localhost:5173/dashboard/admin/disputes
+http://localhost:5173/dashboard/admin/analytics
+http://localhost:5173/dashboard/admin/settings
+🔧 Backend API URLs (http://localhost:5000)
+GET http://localhost:5000/api/health
+POST http://localhost:5000/api/auth/register
+POST http://localhost:5000/api/auth/login
+GET http://localhost:5000/api/rides
+POST http://localhost:5000/api/rides/estimate
+POST http://localhost:5000/api/rides/request
+PUT http://localhost:5000/api/rides/:id/accept
+PUT http://localhost:5000/api/rides/:id/status
+GET http://localhost:5000/api/users/profile
+PUT http://localhost:5000/api/users/profile
+GET http://localhost:5000/api/users/driver/stats
+GET http://localhost:5000/api/users/admin/analytics
+PUT http://localhost:5000/api/users/:id/status
 ## 📊 Feature-Rich Dashboards
 Access role-protected dashboards (Login required):
 
